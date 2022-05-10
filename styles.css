@@ -106,6 +106,7 @@ body {
         background-repeat: no-repeat;
         background-position: top;
         width: 60%;
+        height: auto;
         background-size: 100%;
         margin-top: 0vw
     }
@@ -117,7 +118,7 @@ body {
         background-repeat: no-repeat;
         background-position-x: 0vw;
         padding: 4vw 0vw 16vw 16vw;
-        height: 30.2vw;
+        height: 30vw;
     }
 
     .logo {
