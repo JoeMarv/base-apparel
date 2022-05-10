@@ -94,6 +94,10 @@ body {
     opacity: 0.7
 }
 
+form p {
+    color: red
+}
+
 @media screen and (min-width: 768px) {
     body {
         display: flex;
