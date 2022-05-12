@@ -66,7 +66,7 @@ body {
     line-height: 1.4;
 }
 
-.email input {
+#email input {
     width: 85%;
     height: 12vw;
     border-radius: 12vw;
@@ -75,7 +75,19 @@ body {
     padding-left: 6vw;
 }    
 
-.email button {
+.wrong-email {
+    width: 85%;
+    height: 12vw;
+    border-radius: 12vw;
+    border: solid 0.1vw red;
+    padding-left: 6vw;
+    background-image: url('images/icon-error.svg');
+    background-repeat: no-repeat;
+    background-position: 51vw 2vw;
+    background-size: 7vw;
+}
+
+#email button {
     position: absolute;
     width: 18%;
     height: 13.1vw;
@@ -84,7 +96,14 @@ body {
     border: none;
     cursor: pointer;
     background-image: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
-    box-shadow: 0vw 1vw 10vw hsl(0, 80%, 86%) 
+    box-shadow: 0vw 1vw 10vw hsl(0, 80%, 86%);
+    transition: .8secs
+}
+
+#email button:hover {
+    transition: .8secs;
+    background-image: linear-gradient(to right, hsl(0, 100%, 95%), hsl(0, 100%, 90%));
+    box-shadow: 0vw 1vw 10vw hsl(0, 80%, 86%);
 }
 
 ::placeholder {
@@ -94,8 +113,14 @@ body {
     opacity: 0.7
 }
 
-form p {
-    color: red
+.invalid-message {
+    color: red;
+    display: none;
+}
+
+.success-message {
+    color: green;
+    display: none;
 }
 
 @media screen and (min-width: 768px) {

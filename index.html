@@ -34,11 +34,11 @@
         </span>
       </div>
 
-      <form class="email" action="submit">
-        <input type="email" placeholder="Email Address" class="input">
-        <button type="submit" class="submit"><img src="images/icon-arrow.svg" type="submit"></button>
-        <p class="empty-message"></p>
-        <p class="invalid-message"></p>
+      <form name="form" id="email" action="#">
+        <input name="email" type="email" required class="input" placeholder="Email Address" id="input">
+        <button type="submit" id="submit"><img src="images/icon-arrow.svg"  onclick='ValidateEmail(document.form.email)'></button>
+        <p class="invalid-message">Please enter a valid email address!</p>
+        <p class="success-message">You have subscribed successfully</p>
       </form>
     </div>
   </div>

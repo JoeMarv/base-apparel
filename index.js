@@ -1,21 +1,21 @@
-const email = document.querySelector('.email');
-const form = document.querySelector('.form');
-const emailMessage = document.querySelector('.empty-message');
-document.querySelector('.invalid-message')
+document.getElementById('input').addEventListener('invalid', myFunction);
 
-form.addEventListener('submit', e => {
-    if(email.value) {
-        const regexMatch = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email.value);
-        if (regexMatch) {
-            errorEmail.textContent = '';
-        } else {
-            e.preventDefault();
-            errorEmail.textContent = 'email is invalid';
-            emailMessage.textContent = "";
-        }
+myFunction(){
+    this.setCustomValidity('');
+}
+
+var email = document.getElementById('.input');
+var success = document.getElementById('.success-message');
+var empty = document.getElementById('.empty-message');
+var fail = document.getElementById('.invalid-message');
+
+function ValidateEmail(input) {
+    var validRegex = /^[a-zA-Z0-9][\-_\.\+\!\#\$\%\&\'\*\/\=\?\^\`\{\|]{0,1}([a-zA-Z0-9][\-_\.\+\!\#\$\%\&\'\*\/\=\?\^\`\{\|]{0,1})*[a-zA-Z0-9]@[a-zA-Z0-9][-\.]{0,1}([a-zA-Z][-\.]{0,1})*[a-zA-Z0-9]\.[a-zA-Z0-9]{1,}([\.\-]{0,1}[a-zA-Z]){0,}[a-zA-Z0-9]{0,}$/i;
+    if (input.value.match(validRegex)) {
+        location.reload()
+        success.style.display = 'block';
     } else {
-        e.preventDefault();
-        emailMessage.textContent = 'You must type in an email';
-        errorEmail.textContent = "";
+        fail.style.display = 'block';
+        email.classList.add('wrong-mail');
     }
-});
+}
