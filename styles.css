@@ -66,7 +66,7 @@ body {
     line-height: 1.4;
 }
 
-#email input {
+#form1 input {
     width: 85%;
     height: 12vw;
     border-radius: 12vw;
@@ -87,7 +87,7 @@ body {
     background-size: 7vw;
 }
 
-#email button {
+#form1 button {
     position: absolute;
     width: 18%;
     height: 13.1vw;
@@ -100,7 +100,7 @@ body {
     transition: .8secs
 }
 
-#email button:hover {
+#form1 button:hover {
     transition: .8secs;
     background-image: linear-gradient(to right, hsl(0, 100%, 95%), hsl(0, 100%, 90%));
     box-shadow: 0vw 1vw 10vw hsl(0, 80%, 86%);
