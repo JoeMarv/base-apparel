@@ -1,6 +1,6 @@
 document.getElementById('input').addEventListener('invalid', myFunction);
 
-myFunction(){
+myFunction() {
     this.setCustomValidity('');
 }
 
@@ -16,6 +16,8 @@ function ValidateEmail(input) {
         success.style.display = 'block';
     } else {
         fail.style.display = 'block';
-        email.classList.add('wrong-mail');
+        email.classList.add('wrong-email');
     }
 }
+
+alert("Leave me alone")
