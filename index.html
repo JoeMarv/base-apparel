@@ -37,13 +37,15 @@
       <form name="form1" id="form1" action="#" class="form1">
         <div>
           <input autocomplete="off" name="text1" type="email" required class="email1" placeholder="Email Address" id="email1" autofocus>
-          <p class="invalid-message">Please enter a valid email address!</p>
-          <p class="success-message">You have subscribed successfully!</p>
+          
         </div>
         
         <button type="submit" name="validate" id="submit" class="submit" onclick='ValidateEmail(document.form1.text1)' value="">
           <img src="images/icon-arrow.svg">
         </button>
+
+        <p class="invalid-message">Please enter a valid email address!</p>
+        <p class="success-message">You have subscribed successfully!</p>
       </form>
     </div>
   </div>

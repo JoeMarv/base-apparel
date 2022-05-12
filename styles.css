@@ -69,9 +69,9 @@ body {
 #form1 input {
     width: 85%;
     height: 12vw;
-    outline:none;
+    outline: none;
     border-radius: 12vw;
-    border: solid 0.1vw hsl(0, 36%, 70%);
+    border: solid 1px hsl(0, 36%, 70%);
     border-color: hsl(0, 36%, 70%);
     padding-left: 6vw;
     font-weight: 500
@@ -82,7 +82,7 @@ body {
     height: 12vw;
     border-radius: 12vw;
     outline:none;
-    border: solid .2vw hsl (0, 93%, 68%);
+    border: solid 2px red;
     padding-left: 6vw;
     background-image: url('images/icon-error.svg');
     background-repeat: no-repeat;
